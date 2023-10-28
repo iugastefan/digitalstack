@@ -3,7 +3,7 @@ package com.example;
 
 public class W05LinkedList {
     public static class LinkedList<T> {
-        private Node head;
+        Node head;
         private Node tail;
         private int size;
 
