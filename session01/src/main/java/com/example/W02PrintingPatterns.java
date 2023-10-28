@@ -15,16 +15,11 @@ public class W02PrintingPatterns {
     }
 
     public static void pascalPattern(int rows) {
-        int[][] pascal = new int[rows][];
         for (int i = 0; i < rows; i++) {
-            pascal[i] = new int[i + 1];
+            int current = 1;
             for (int j = 0; j <= i; j++) {
-                if (j == 0 || j == i) {
-                    pascal[i][j] = 1;
-                } else {
-                    pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j];
-                }
-                System.out.printf("%d ", pascal[i][j]);
+                System.out.printf("%d ", current);
+                current = current * (i - j) / (j + 1);
             }
             System.out.println();
         }
