@@ -15,11 +15,16 @@ public class W06LinkedListMiddle {
             // byTwo moves two nodes at a time
             byTwo = byTwo.next.next;
         }
+        if (byOne == null) {
+            // list is empty
+            return null;
+        }
         return byOne.data;
     }
 
     public static void main(String[] args) {
         LinkedList<Integer> list = new LinkedList<>();
+        assert middle(list.head) == null;
         list.add(1);
         list.add(2);
         list.add(3);
