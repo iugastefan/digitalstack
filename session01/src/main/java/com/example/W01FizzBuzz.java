@@ -1,8 +1,7 @@
 package com.example;
 
 public class W01FizzBuzz {
-    private W01FizzBuzz() {
-    }
+    private W01FizzBuzz() {}
 
     public static void showFizzBuzz(int n) {
         for (int i = 0; i < n; i++) {
